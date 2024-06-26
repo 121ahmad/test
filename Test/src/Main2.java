@@ -1,8 +1,8 @@
 
 class overriding{
 	
-	 void meth() {
-		System.out.println("Aman");
+	 void meth(int a , int b) {
+		System.out.println("a+b");
 
 	}
 	
@@ -10,13 +10,23 @@ class overriding{
 }
 
 
-class overriding extends A{
+class A  extends overriding{
 	
-	
+	@Override
+	void meth(int a, int b) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(a-b);
+	}
 }
 
 
 
 public class Main2 {
 
+	public static void main(String[] args) {
+		A n = new A();
+		n.meth(10, 20);
+		
+	}
 }
