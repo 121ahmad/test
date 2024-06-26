@@ -26,7 +26,7 @@ public class Main2 {
 
 	public static void main(String[] args) {
 		A n = new A();
-		n.meth(10, 20);
+		n.meth(10, 30);
 		
 	}
 }
